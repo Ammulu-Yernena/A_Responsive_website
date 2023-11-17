@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: orange;
+}
+
+html {
+    background-color: orange;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.heading {
+    text-align: center;
+    background-color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#number {
+    font-size: 40px;
+}
+
+#box {
+    margin-top: 13px;
+    background-color: rgb(220, 241, 249);
+    max-height: 100px;
+    text-align: center;
+}
+
+#box a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#para {
+    margin: 5px 10px 10px 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#know,#know2{
+   display: none;
+}
+
+.radio-buttons{
+   display: none;
+}
+
+
+
+@media screen and (min-width: 768px){
+   body{
+       grid-template-columns:repeat(4,1fr);
+ }
+}
+@media screen and (max-width: 768px){
+   body{
+       grid-template-columns: 1fr;
+ }
+
+ .item{
+   height:fit-content;
+   max-width: 100%;
+   max-height: 90vh;
+   position: relative;
+   overflow-y: auto;   
+ }
+
+ #know{
+   display: block;
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 6rem;
+   color: blue;
+}
+#know2{
+   display: block;
+   font-size: 23px;
+   font-weight: 800;
+   margin-top: 6rem;
+   margin-left: 8rem;
+   color: rgb(183, 0, 190);
+}
+  #box{
+   margin:20px 0px;
+  }
+
+  
+ .item2,.item3,.item4{
+   display: none;
+ }
+
+ 
+.radio-buttons {
+   text-align: center;
+   margin-top: 0px;
+  display: block;
+   padding: 10px;
+}
+
+.radio-buttons input {
+   margin-right: 10px;
+}
+
+}
